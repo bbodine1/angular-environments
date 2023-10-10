@@ -2,7 +2,13 @@
   "name": "@angular-environments/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve angular-environments",
+    "start:prod": "nx serve angular-environments -c production",
+    "start:uat": "nx serve angular-environments -c uat",
+    "build": "nx build source",
+    "test": "nx test source"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
